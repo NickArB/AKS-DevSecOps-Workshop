@@ -48,7 +48,6 @@ resource aks 'Microsoft.ContainerService/managedClusters@2022-06-01' = {
       {
         name: 'agentpool'
         count: agentCount
-        vmSize: agentVMSize
         osType: 'Linux'
         mode: 'System'
       }
